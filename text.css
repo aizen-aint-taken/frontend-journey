@@ -1,0 +1,75 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* line-height: 1.7; */
+}
+
+:root{
+  --primary-color: #1a73e8;
+  --secondary-color: #fbbc05;
+  --accent-color: #34a853;
+}
+
+
+
+h1{
+    color: var(--accent-color);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h2{
+    color: rgb(34,139,34);
+    text-align: center;
+}
+
+.header{
+    padding: 20px;
+    border: solid gray 5px;
+    text-align: center;
+
+    
+}
+
+#front{
+    text-align: center;
+    background-color: rgb(109, 164, 109);
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+#special-text{
+    text-align: center;
+    background-color: rgb(109, 164, 109);
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+
+}
+
+#page{
+    color: hsl(0 , 0% , 30%);
+    text-align: center;
+}
+
+blockquote{
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #1a73e8;
+    padding-left: 10px;
+}
+
+#click{
+    padding: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+}
+
+#click:hover{
+    background-color: aquamarine;
+}
