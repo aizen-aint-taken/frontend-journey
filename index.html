@@ -3,20 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="author" content="Ely Gian Ga">
     <link rel="stylesheet" href="text.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <h1>Css page</h1>
-    <h2>About this page</h2>
-    <div class="header">
-        <p id="front">Frontend Journey</p>
-        <p id="special-text">Hi this a special text</p>
-        <p id="page">This page is part of my CSS learning journey.</p>
-        <blockquote>"To be a frontend developer someday "</blockquote>
-        <button id="click">Click Me</button>
-    </div>
+    <div class="container">
+        <header class="dash-header"> 
+            <i class="fa fa-bars"></i>
+            <!-- nav bar sa choices -->
+            <h1>Welcome Aboard</h1>
+            <nav class="choices-nav">
+                <ul class="choices">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <!-- Settings sa kilid  -->
+        <aside class="dash-side">
+            <nav class="aside-settings">
+                <ul>
+                   <li>
+                        <a href="#">
+                            <i class="fa-solid fa-eye"></i> Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">  
+                            <i class="fa-solid fa-gear"></i> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-file-word"></i> Reports
+                        </a>
+                        </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-simple"></i> Statistics
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-image">
+                <img src="../images/me.jpg" alt="Profile Image">
+                <div class="image-overlay">
+                    <h3>Ely Gian Ga</h3>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+        </aside>
+
+      
+
+        <!-- Main Character sa page -->
+        <main>
+            <!-- Overview sa page -->
+            <section>
+                <h2>Overview</h2>
+                <hr>
+                <p class="overview-about">A web developer who focuses on creating functional and easy-to-use websites. Skilled in working with both front-end and back-end technologies, and interested in improving coding skills through practice and learning. Enjoys solving problems, keeping code organized, and building projects that are useful for others.</p>
+            </section>
+
+            <!-- About me sa kani na page -->
+            <section>
+                <h2>Get to Know me</h2>
+                <p><a href="#">Click here to know about me </a></p>
+            </section>
+
+            <!-- Skills nako sa Far   -->
+            <section>
+                <h2>Skills that i offer</h2>
+                <ul>
+                    <li>Php</li>
+                    <li>Javascript</li>
+                    <li>MySQL</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; All rights Reserved</p>
+        </footer>
+    </div>
 </body>
 </html>
