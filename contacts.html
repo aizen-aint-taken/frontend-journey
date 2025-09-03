@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../cssfiles/text.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <header class="dash-header"> 
+            <i class="fa fa-bars"></i>
+            <!-- nav bar sa choices -->
+            <h1>Contacts</h1>
+            <nav class="choices-nav">
+                <ul class="choices">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+  <!-- Contact Form -->
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
+    <form action="#" method="POST" class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
+      <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg" required></textarea>
+      <button class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
