@@ -21,7 +21,7 @@
             grid-template-columns: 280px 1fr;
             grid-template-rows: auto 1fr auto;
             min-height: 100vh;
-            gap: 10px;
+            gap: 20px;
             padding: 20px;
             max-width: 1400px;
             margin: 0 auto;
@@ -38,6 +38,10 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+                /* width: 77%;
+                margin-left: auto;
+                max-width: 1200px; */
+
         }
 
         .dash-header h1 {

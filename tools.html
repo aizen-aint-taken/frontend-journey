@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Development Tools</title>
+    <link rel="stylesheet" href="../cssfiles/tools.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+</head>
+<body class="bg-gray-50">
+    <header class="dash-header"> 
+        <div class="flex items-center gap-4">
+            <i class="fa fa-bars text-xl cursor-pointer"></i>
+            <h1 class="text-2xl font-bold">Development Tools</h1>
+        </div>
+        <nav class="choices-nav">
+            <ul class="choices">
+               <li><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle mr-2"></i>About</a></li>
+                <li><a href="contacts.html"><i class="fas fa-envelope mr-2"></i>Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="py-16 sm:py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+                <h1 class="section-title text-4xl font-bold mb-4">Tools I Use</h1>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Here are the development tools and technologies that power my projects and enhance my productivity.
+                </p>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Visual Studio Code -->
+                <div class="tool-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code" class="w-full h-full object-contain" />
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Visual Studio Code</h3>
+                    <p class="text-sm text-gray-600 mb-4">My go-to code editor for development with powerful extensions and debugging.</p>
+                    <div class="flex gap-1 text-yellow-400">
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- Laravel -->
+                <div class="tool-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center">
+                        <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" class="w-full h-full object-contain" />
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Laravel</h3>
+                    <p class="text-sm text-gray-600 mb-4">Elegant PHP framework for building robust web applications with clean syntax.</p>
+                    <div class="flex gap-1 text-yellow-400">
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="tool-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center text-orange-600">
+                        <i class="fab fa-git-alt text-4xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Git</h3>
+                    <p class="text-sm text-gray-600 mb-4">Version control system for tracking changes and collaborating on projects.</p>
+                    <div class="flex gap-1 text-yellow-400">
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="tool-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center text-yellow-500">
+                        <i class="fab fa-js-square text-4xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">JavaScript</h3>
+                    <p class="text-sm text-gray-600 mb-4">Dynamic programming language for creating interactive web experiences.</p>
+                    <div class="flex gap-1 text-yellow-400">
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="far fa-star text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="tool-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center text-blue-600">
+                        <i class="fas fa-database text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">MySQL</h3>
+                    <p class="text-sm text-gray-600 mb-4">Reliable relational database management system for data storage.</p>
+                    <div class="flex gap-1 text-yellow-400">
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="far fa-star text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="tool-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center text-cyan-500">
+                        <i class="fab fa-css3-alt text-4xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Tailwind CSS</h3>
+                    <p class="text-sm text-gray-600 mb-4">Utility-first CSS framework for rapidly building custom designs.</p>
+                    <div class="flex gap-1 text-yellow-400">
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                        <i class="fas fa-star text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <div class="inline-flex items-center gap-2 text-gray-600">
+                    <i class="fas fa-lightbulb text-yellow-500"></i>
+                    <span class="text-sm">Always exploring new tools and technologies to improve my workflow</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

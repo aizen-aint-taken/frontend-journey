@@ -3,38 +3,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials</title>
-  <link rel="stylesheet" href="../cssfiles/text.css">
+  <title>My Internship Journey</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../cssfiles/testimonials.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
 </head>
 <body class="bg-gray-50">
-     <header class="dash-header"> 
-            <i class="fa fa-bars"></i>
-            <!-- nav bar sa choices -->
-            <h1>Welcome Aboard</h1>
-            <nav class="choices-nav">
-                <ul class="choices">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
 
-    <div class=" flex justify-center pt-8 pb-5 space-x-6">
-        <section class="max-w-4xl mx-auto px-6 py-12 border-8 border-indigo-500">
-          <h2 class="text-3xl font-bold mb-8 text-cyan-700 text-center">Company Testimonials</h2>
-          <div class="space-y-6">
-            <div class="p-6 bg-white rounded-lg shadow border-l-4 border-indigo-500">
-              <p class="text-gray-700 italic">“Very reliable VA! She keeps my business organized and saves our hours daily.”</p>
-              <p class="mt-2 font-semibold">-VXI , Felcris Centrale</p>
+  <!-- Header -->
+  <header class="dash-header"> 
+    <div class="flex items-center gap-4">
+      <i class="fa fa-bars text-xl cursor-pointer"></i>
+      <h1 class="text-2xl font-bold">My Journey</h1>
+    </div>
+    <nav class="choices-nav">
+      <ul class="choices">
+        <li><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle mr-2"></i>About</a></li>
+        <li><a href="contacts.html"><i class="fas fa-envelope mr-2"></i>Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Documentation Section -->
+  <div class="bg-gray-50 py-16 sm:py-24">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-base font-semibold text-indigo-600 mb-2">
+          <i class="fas fa-graduation-cap mr-2"></i>Documentation
+        </h1>
+        <p class="section-title text-4xl font-bold mb-4 sm:text-5xl">My Internship Journey</p>
+        <p class="text-gray-600 text-lg max-w-3xl mx-auto">July - August 2024</p>
+        <p class="text-gray-500 mt-2 max-w-2xl mx-auto">A comprehensive look at my learning experience, projects, and growth during my internship period.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+        
+        <!-- VXI IDF Room - Main Feature -->
+        <div class="bento-card relative lg:row-span-2">
+          <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-building text-indigo-600"></i>
+                <p class="text-lg font-bold text-gray-950">VXI IDF Room</p>
+              </div>
+              <p class="text-sm text-gray-600">My primary workspace where I collaborated with the development team and learned industry best practices in a professional environment.</p>
+
+              <img src="../images/idf room.jpg" class="h-30 w-70 object-fill" alt="">
             </div>
-            <div class="p-6 bg-white rounded-lg shadow border-l-4 border-indigo-500">
-              <p class="text-gray-700 italic">“Excellent communication and always meets deadlines. Highly recommend!”</p>
-              <p class="mt-2 font-semibold">- Paul Osunero , Team leader VXI Felcris Centrale</p>
+          
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-[2rem]"></div>
+        </div>
+
+        <!-- Skills Development -->
+        <div class="bento-card relative max-lg:row-start-1">
+          <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-chart-line text-green-600"></i>
+                <p class="text-lg font-bold text-gray-950">Skills Growth</p>
+              </div>
+              <p class="text-sm text-gray-600">Significant improvement in coding abilities, problem-solving skills, and understanding of development workflows.</p>
+            </div>
+            <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-6 max-lg:pb-8 sm:px-10 lg:pb-2">
+              <div class="grid grid-cols-2 gap-4 w-full max-w-xs">
+                <div class="bg-green-100 p-4 rounded-lg text-center">
+                  <i class="fab fa-js-square text-2xl text-yellow-600"></i>
+                  <p class="text-xs mt-1 font-medium">JavaScript</p>
+                </div>
+                <div class="bg-blue-100 p-4 rounded-lg text-center">
+                  <i class="fab fa-php text-2xl text-indigo-600"></i>
+                  <p class="text-xs mt-1 font-medium">PHP</p>
+                </div>
+                <div class="bg-purple-100 p-4 rounded-lg text-center">
+                  <i class="fas fa-database text-2xl text-purple-600"></i>
+                  <p class="text-xs mt-1 font-medium">MySQL</p>
+                </div>
+                <div class="bg-pink-100 p-4 rounded-lg text-center">
+                  <i class="fab fa-git-alt text-2xl text-orange-600"></i>
+                  <p class="text-xs mt-1 font-medium">Git</p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+          <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-[2rem]"></div>
+        </div>
+
+        <!-- Team Collaboration -->
+        <div class="bento-card relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+          <div class="absolute inset-px rounded-lg bg-white"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-users text-blue-600"></i>
+                <p class="text-lg font-bold text-gray-950">Team Collaboration</p>
+              </div>
+              <p class="text-sm text-gray-600">Worked closely with senior developers, participated in code reviews, and contributed to team projects.</p>
+            </div>
+            <div class="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
+              <div class="flex -space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">M</div>
+                <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">S</div>
+                <div class="w-10 h-10 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold">D</div>
+                <div class="w-10 h-10 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white font-bold">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5"></div>
+        </div>
+
+        <!-- Projects & Learning -->
+        <div class="bento-card relative lg:row-span-2">
+          <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fas fa-code text-purple-600"></i>
+                <p class="text-lg font-bold text-gray-950">Projects Completed</p>
+              </div>
+              <p class="text-sm text-gray-600">Hands-on experience with real-world projects, from small features to complete applications.</p>
+            </div>
+            <div class="relative min-h-[200px] w-full grow">
+              <div class="absolute top-6 right-0 bottom-0 left-6 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
+                <div class="flex bg-gray-800 outline outline-white/5">
+                  <div class="flex text-xs font-medium text-gray-400">
+                    <div class="border-r border-b border-r-white/20 border-b-white/20 bg-white/10 px-3 py-2 text-white flex items-center gap-2">
+                      <i class="fas fa-file-code text-xs"></i>
+                      <span>project.js</span>
+                    </div>
+                    <div class="border-r border-gray-600/20 px-3 py-2 flex items-center gap-2">
+                      <i class="fab fa-html5 text-xs"></i>
+                      <span>index.html</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-4 pt-4 pb-8 text-xs text-green-400 font-mono">
+                  <div class="mb-2"><span class="text-purple-400">function</span> <span class="text-yellow-400">internshipGrowth</span>() {</div>
+                  <div class="ml-4 mb-2"><span class="text-blue-400">const</span> skills = ['Laravel', 'JS', 'MySQL'];</div>
+                  <div class="ml-4 mb-2"><span class="text-pink-400">return</span> skills.<span class="text-yellow-400">map</span>(skill => improve(skill));</div>
+                  <div class="mb-2">}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="relative isolate overflow-hidden bg-white px-6 py-16 sm:py-24 lg:px-8">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20"></div>
+    <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+    
+    <div class="mx-auto max-w-2xl lg:max-w-6xl">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="section-title text-3xl font-bold mb-4">What Others Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Feedback and testimonials from mentors, colleagues, and supervisors during my internship journey.</p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid gap-8 lg:grid-cols-2">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              JS
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">Franz Moran</h3>
+              <p class="text-sm text-gray-600">IT Desktop Support</p>
+              <div class="flex gap-1 mt-1">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+          </div>
+          <blockquote class="text-gray-700 italic mb-4">
+            "Outstanding dedication and rapid learning ability. Consistently delivered high-quality code and showed great initiative in tackling complex problems. A pleasure to mentor!"
+          </blockquote>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-quote-left"></i>
+            <span>VXI Development Team</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              MJ
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">Leandro Lucero Jr</h3>
+              <p class="text-sm text-gray-600">Project Manager</p>
+              <div class="flex gap-1 mt-1">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+          </div>
+          <blockquote class="text-gray-700 italic mb-4">
+            "Excellent communication skills and strong problem-solving abilities. Always met deadlines and contributed valuable insights during team meetings. Would definitely recommend!"
+          </blockquote>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-quote-left"></i>
+            <span>Project Management Team</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              RB
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">Pablito Guilon Jr</h3>
+              <p class="text-sm text-gray-600">Technical Lead</p>
+              <div class="flex gap-1 mt-1">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+          </div>
+          <blockquote class="text-gray-700 italic mb-4">
+            "Impressive growth throughout the internship. Showed real passion for development and quickly adapted to our tech stack. Code quality improved significantly over the two months."
+          </blockquote>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-quote-left"></i>
+            <span>Technical Leadership</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              SW
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900">Paul Osunero</h3>
+              <p class="text-sm text-gray-600">VXI TEAM LEADER </p>
+              <div class="flex gap-1 mt-1">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+          </div>
+          <blockquote class="text-gray-700 italic mb-4">
+            "Professional attitude, punctual, and great team player. Integrated well with the company culture and showed genuine interest in learning. We'd love to have them back!"
+          </blockquote>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-quote-left"></i>
+            <span>Human Resources</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary Stats -->
+      <div class="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-indigo-600 mb-2">8</div>
+          <div class="text-sm text-gray-600">Weeks Completed</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-600 mb-2">12</div>
+          <div class="text-sm text-gray-600">Projects Worked On</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-purple-600 mb-2">100%</div>
+          <div class="text-sm text-gray-600">Task Completion Rate</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-orange-600 mb-2">5★</div>
+          <div class="text-sm text-gray-600">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
