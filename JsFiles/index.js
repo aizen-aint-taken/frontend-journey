@@ -1,30 +1,35 @@
-// document.addEventListener("DOMContentLoaded", function(){
-    
+function updateClock() {
+    const now = new Date();
+    const time = now.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
 
-//     document.getElementById("About").addEventListener("click",(event) =>{
-//         // event.preventDefault();
+    document.getElementById("clock").textContent = time;
+  }
 
-//           const message = "Hello Welcome"
 
-//           const notice = document.createElement("div")  
-//             notice.innerText = message
-//             // notice.style.position = "fixed";
-//             // notice.style.top = "20px";
-//             // notice.style.right = "20px";
-//             // notice.style.background = "#2563eb";
-//             // notice.style.color = "white";
-//             // notice.style.padding = "10px 15px";
-//             // notice.style.borderRadius = "8px";
-//             // notice.style.boxShadow = "0 4px 6px rgba(0,0,0,0.2)";
-//             // notice.style.zIndex = "1000";
-//             // notice.style.transition = "opacity 0.5s ease";
+  updateClock();
+  setInterval(updateClock, 1000);
 
-//           document.body.appendChild(notice);
 
-//           setTimeout(()=>{
-//             hello.style.opacity = 0;
-//            setTimeout(() => notice.remove() , 500)
-//           },2000)
 
-//     })  
-// })
+
+
+
+  (function updateYear() {
+    const now = new Date();
+    const year = now.getFullYear();
+
+    document.querySelectorAll('[data-year]').forEach(el => {
+      const start = parseInt(el.getAttribute('start'), 10);
+      el.textContent = (!isNaN(start) && start < year) 
+        ? `${start}–${year}` 
+        : `${year}`;
+    });
+
+    // Schedule update after New Year
+    const nextTick = new Date(year + 1, 0, 1, 0, 0, 1);
+    setTimeout(updateYear, nextTick - now);
+  })();
