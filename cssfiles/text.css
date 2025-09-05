@@ -117,9 +117,10 @@
 
         .sidebar-image {
             margin-top: 20px;
-            padding: 20px;
+            padding: 50px;
             text-align: center;
-            position: relative;
+            position: relative;    
+            object-position: center;
         }
 
         .sidebar-image img {
