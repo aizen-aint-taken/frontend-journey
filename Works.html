@@ -5,31 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample Works</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../cssfiles/text.css">
+  <style>
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
   <!-- Navbar -->
-  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-600">VA Portfolio</h1>
-    <div class="space-x-6">
- 
+
+  <header class="dash-header"> 
+        <i class="fa fa-bars"></i>
+            <h1>Welcome Aboard</h1>
+            <nav class="choices-nav">
+                <ul class="choices">
+                   <li><a href="index.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle mr-2"></i>About</a></li>
+                    <li><a href="contacts.html"><i class="fas fa-envelope mr-2"></i>Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 py-16 text-center fade-in">
+    <h2 class="text-4xl font-bold text-gray-800 mb-4">Professional Virtual Assistant</h2>
+    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Delivering reliable, efficient, and high-quality virtual assistance to help your business thrive</p>
+  </section>
 
   <!-- Works Grid -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-8">Sample Works</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="font-semibold">Social Media Management</h3>
-        <p class="text-gray-600">Created content calendars and managed Facebook & Instagram pages.</p>
+  <section id="works" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Sample Works</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <div class="p-8 bg-white rounded-xl shadow-md card-hover border-l-4 border-blue-500">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Social Media Management</h3>
+        <p class="text-gray-600 mb-4">Created engaging content calendars and managed Facebook & Instagram pages, increasing engagement by 40%.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Content Creation</span>
+          <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Analytics</span>
+        </div>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="font-semibold">Email Handling</h3>
-        <p class="text-gray-600">Organized inbox, managed follow-ups, and reduced response time.</p>
+
+      <div class="p-8 bg-white rounded-xl shadow-md card-hover border-l-4 border-green-500">
+        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Email Management</h3>
+        <p class="text-gray-600 mb-4">Organized inbox systems, managed follow-ups, and reduced average response time from 48 to 2 hours.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Organization</span>
+          <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Automation</span>
+        </div>
       </div>
-      <div class="p-6 bg-white rounded-lg shadow">
-        <h3 class="font-semibold">Research & Data Entry</h3>
-        <p class="text-gray-600">Compiled market research reports and accurate data entry tasks.</p>
+
+      <div class="p-8 bg-white rounded-xl shadow-md card-hover border-l-4 border-purple-500">
+        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Research & Data Entry</h3>
+        <p class="text-gray-600 mb-4">Compiled comprehensive market research reports and maintained 99.8% accuracy in data entry tasks.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">Research</span>
+          <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">Data Analysis</span>
+        </div>
       </div>
+
     </div>
   </section>
+
+  <!-- Call to Action -->
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <div class="bg-white rounded-2xl p-10 shadow-lg">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Ready to Work Together?</h2>
+      <p class="text-gray-600 mb-8">Let's discuss how I can help streamline your business operations</p>
+      <button class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+        Get In Touch
+      </button>
+    </div>
+  </section>
+
 </body>
 </html>
