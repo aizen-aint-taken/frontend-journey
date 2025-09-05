@@ -81,7 +81,7 @@
             const now = new Date();
             const clockElement = document.getElementById('clock');
             if (clockElement) {
-                clockElement.textContent = now.toLocaleTimeString();
+                clockElement.textContent = now.toLocaleTimeString("en-US" ,{timeZone: "Asia/Manila"});
             }
         }
 
