@@ -1,4 +1,10 @@
-    // Sidebar toggle functionality
+   document.addEventListener("DOMContentLooded",function(){
+    alert("hi")
+   })
+   
+   
+   
+   // Sidebar toggle functionality
         const menuToggle = document.getElementById('menuToggle');
         const sidebar = document.getElementById('sidebar');
         const container = document.querySelector('.container');
